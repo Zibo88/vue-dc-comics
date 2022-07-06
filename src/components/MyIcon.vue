@@ -47,6 +47,7 @@ export default {
 .icon-section{
     background-color: $main_color;
     padding: 0 20px;
+    justify-content: space-between;
     .icon{
         align-items: center;
         font-size: 13px;
