@@ -8,6 +8,10 @@
       <MainCard/>
       <MyIcon/>
     </main>
+
+    <footer>
+      <TheFooter/>
+    </footer>
     
   </div>
 </template>
@@ -17,13 +21,15 @@
 import MyHeader from './components/MyHeader.vue'
 import MainCard from './components/MainCard.vue'
 import MyIcon from  './components/MyIcon.vue'
+import TheFooter from  './components/TheFooter.vue'
 
 export default {
   name: 'App',
   components: {
     MyHeader,
     MainCard,
-    MyIcon
+    MyIcon,
+    TheFooter
   }
 }
 </script>

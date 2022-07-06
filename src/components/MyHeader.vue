@@ -92,6 +92,7 @@ header {
         img{
             width: 50px;
             display: inline;
+            margin-left: 10px;
         }
     }
 
