@@ -1,17 +1,26 @@
 <template>
   <div id="app">
-    <MyHeader/>
+    <header>
+      <MyHeader/>
+    </header>
+
+    <main>
+      <MainCard/>
+    </main>
+    
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+
  import MyHeader from './components/MyHeader.vue'
+import MainCard from './components/MainCard.vue'
 
 export default {
   name: 'App',
   components: {
-    MyHeader
+    MyHeader,
+    MainCard
   }
 }
 </script>
