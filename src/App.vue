@@ -6,6 +6,7 @@
 
     <main>
       <MainCard/>
+      <MyIcon/>
     </main>
     
   </div>
@@ -13,14 +14,16 @@
 
 <script>
 
- import MyHeader from './components/MyHeader.vue'
+import MyHeader from './components/MyHeader.vue'
 import MainCard from './components/MainCard.vue'
+import MyIcon from  './components/MyIcon.vue'
 
 export default {
   name: 'App',
   components: {
     MyHeader,
-    MainCard
+    MainCard,
+    MyIcon
   }
 }
 </script>
