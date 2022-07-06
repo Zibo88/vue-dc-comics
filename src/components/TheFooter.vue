@@ -195,6 +195,9 @@ export default {
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
+        button{
+            border: none;
+        }
     }.btn{
         color: white;
         border: 2px solid $main_color;
