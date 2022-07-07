@@ -1,54 +1,47 @@
 <template>
    <section class="container">
-       <div class="icon-section flex">
-           
-           <!-- prima icona -->
-           <div>
-               <a class="icon flex" href="#">
-                    <img src="../assets/img/buy-comics-digital-comics.png" alt="comics digital logo">
-                    <span>DIGITAL COMICS</span>
-               </a>
-              
-           </div>
-
-           <!-- seconda icona -->
-            <div>
-                <a class="icon flex" href="#">
-                    <img src="../assets/img/buy-comics-merchandise.png" alt="comics digital logo">
-                    <span>DC MERCHANDISE</span>
-                </a>
-           </div>
-
-           <!-- terza icona -->
-            <div>
-               <a class="icon flex" href="#">
-                    <img src="../assets/img/buy-comics-subscriptions.png" alt="comics digital logo">
-                    <span>SUBSCRIPTION</span>
-               </a>
-           </div>
-
-           <!-- quarta icona -->
-            <div>
-                <a class="icon flex" href="#">
-                    <img src="../assets/img/buy-comics-shop-locator.png" alt="comics digital logo">
-                    <span>COMIC SHOP LOCATOR</span>
-                </a>
-           </div>
-
-           <!-- quinta icona -->
-            <div>
-               <a class="icon flex" href="#">
-                    <img src="../assets/img/buy-dc-power-visa.svg" alt="comics digital logo">
-                    <span>DC POWER VISA</span>
-               </a>
-           </div>
-       </div>
+       <!-- creo il templeate che voglio stmpare -->
+           <ul class="icon-section flex">
+               <!-- ciclo le li e ne stampo tante per ogni oggetto dell'array -->
+               <li class="icon flex" v-for="link,index in listIcon" :key="index"> 
+                   <!-- il templeate è composto da un'li con una img ed un testo -->
+                   <!-- utilizzo il link dato dal v-for per ottenere ogni oggetto -->
+                   <img :src="link.img" :alt="link.text">
+                   {{link.text}} 
+                </li>
+           </ul> 
    </section>
 </template>
 
 <script>
 export default {
-    name: 'MyIcon'
+    name: 'MyIcon',
+    data(){
+        return{
+            listIcon: [
+                {
+                    img: require('../assets/img/buy-comics-digital-comics.png'),
+                    text: 'DIGITAL COMICS'
+                },
+                {
+                    img: require('../assets/img/buy-comics-merchandise.png'),
+                    text: 'DC MERCHANDISE'
+                },
+                {
+                    img: require('../assets/img/buy-comics-subscriptions.png'),
+                    text: 'SUBSCRIPTIONS'
+                },
+                {
+                    img: require('../assets/img/buy-comics-shop-locator.png'),
+                    text: 'SHOP LOCATOR'
+                },
+                {
+                    img: require('../assets/img/buy-dc-power-visa.svg'),
+                    text: 'DC POWER VISA'
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -56,7 +49,7 @@ export default {
 @import '../style/variables';
 @import '../style/common';
 
-.icon-section{
+.icon-section.flex{
     background-color: $main_color;
     padding: 0 20px;
     justify-content: space-between;
@@ -68,13 +61,14 @@ export default {
 
        
     }
-    .icon.flex:hover{
+    .icon.flex:hover span{
         color: black;
         
     }
     img{
         width: 100px;
         padding: 20px;
+        color: white;
     }
 }
 </style>

@@ -23,11 +23,11 @@ export default {
 @import '../style/common';
 .single-card{
     margin: 2px;
+    margin: 0 auto;
     width: calc((100% / 6) - 4px);
     img{
-        max-width: 180px;
-        max-height: 180px;
-        margin: 0 auto;
+        max-width: 170px;
+        max-height: 170px;
         overflow: hidden;
     }
     img:hover{

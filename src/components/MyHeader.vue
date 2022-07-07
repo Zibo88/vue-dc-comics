@@ -1,5 +1,5 @@
 <template>
-   <header class="container flex">
+   <div class="container flex">
        <div class="logo">
            <img src="../assets/img/dc-logo.png" alt="DC logo">
        </div>
@@ -11,7 +11,7 @@
                    </li>
                </ul>
            </nav>
-   </header>
+   </div>
 </template>
 
 <script>
@@ -83,7 +83,7 @@ export default {
 <style lang="scss" scoped>
 @import '../style/variables';
 @import '../style/common';
-header {
+.container.flex {
     height: 80px;
     padding: 20px 0;
     align-items: center;
