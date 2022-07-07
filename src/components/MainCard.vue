@@ -2,6 +2,8 @@
     <div class="container">
         <section class="card-container">
              <div class="product-list flex">
+                 <!-- utilizzo il component e avvio un ciclo v-for per stampare tanti elementi quanti sono contenuti all'interno dell'array -->
+                 <!-- richiamo il component e gli do com parametro ogni singolo elemento -->
                 <ProductCard v-for="element,index in comicsCard" :key="index" :featuresCard="element" />
              </div>
         </section>
@@ -10,14 +12,17 @@
 </template>
 
 <script>
+// importo il component nella sezione dove dovrà essere stampato
 import ProductCard from './ProductCard.vue'
 export default {
     name:'MainCard',
     components:{
+        // inserisco il component
         ProductCard,
     },
     data(){
         return{
+            // creo l'array di oggetti necessari
             comicsCard:[
                 
                 {
