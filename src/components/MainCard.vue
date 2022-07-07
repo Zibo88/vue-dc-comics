@@ -6,7 +6,10 @@
                  <!-- utilizzo il component e avvio un ciclo v-for per stampare tanti elementi quanti sono contenuti all'interno dell'array -->
                  <!-- richiamo il component e gli do com parametro ogni singolo elemento -->
                 <ProductCard v-for="element,index in comicsCard" :key="index" :featuresCard="element" />
-             </div>
+            </div>
+            <div class="download-container">
+                <a class="download" href="#">LOAD MORE</a>
+            </div>
         </section>
        
     </div>
@@ -126,6 +129,16 @@ section{
     }
     .product-list{
         flex-wrap: wrap;
+    }
+    .download-container{
+        text-align: center;
+        margin: 10px 0 0 0;
+    }
+    .download{
+        background-color: $main_color;
+        padding: 10px 30px;
+        color: white;
+        
     }
 }
 </style>

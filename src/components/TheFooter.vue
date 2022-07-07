@@ -181,6 +181,9 @@ export default {
         color: #62788a;
         font-size: 13px;
     }
+    .col ul li:hover a{
+        color: white;
+    }
     .footer-img{
         width: 32%;
         position: relative;
