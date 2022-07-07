@@ -30,6 +30,9 @@ export default {
         margin: 0 auto;
         overflow: hidden;
     }
+    img:hover{
+        transform: scale(1.2);
+    }
     h3{
         font-size: 12px;
         margin: 5px 0;
