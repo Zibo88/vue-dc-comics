@@ -26,6 +26,7 @@ import TheFooter from  './components/TheFooter.vue'
 import MyBanner from  './components/MyBanner.vue'
 
 
+
 export default {
   name: 'App',
   components: {
@@ -33,7 +34,8 @@ export default {
     MainCard,
     MyIcon,
     TheFooter,
-    MyBanner
+    MyBanner,
+
   }
 }
 </script>
