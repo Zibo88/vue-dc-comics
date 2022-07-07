@@ -1,6 +1,7 @@
 <template>
     <div class="container">
         <section class="card-container">
+            <label class="current-series">CURRENT SERIES</label>
              <div class="product-list flex">
                  <!-- utilizzo il component e avvio un ciclo v-for per stampare tanti elementi quanti sono contenuti all'interno dell'array -->
                  <!-- richiamo il component e gli do com parametro ogni singolo elemento -->
@@ -106,6 +107,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../style/variables';
+@import '../style/common';
 .container{
         background-color: #292929;
 }
@@ -113,6 +115,15 @@ section{
     padding: 40px 0;
     background-color: $second_color;
     color: white;
+    position: relative;
+    .current-series{
+        background-color: $main_color;
+        display: inline;
+        padding: 10px;
+        position: absolute;
+        top: -20px;
+        left: 0;
+    }
     .product-list{
         flex-wrap: wrap;
     }
