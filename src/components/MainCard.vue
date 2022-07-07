@@ -133,6 +133,9 @@ section{
     .download-container{
         text-align: center;
         margin: 10px 0 0 0;
+        &:hover{
+            transform: scale(1.2);
+        }
     }
     .download{
         background-color: $main_color;

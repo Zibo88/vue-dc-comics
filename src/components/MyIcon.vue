@@ -61,10 +61,16 @@ export default {
     padding: 0 20px;
     justify-content: space-between;
     align-items: center;
-    .icon{
+    .icon.flex{
         align-items: center;
         font-size: 13px;
         color: white;
+
+       
+    }
+    .icon.flex:hover{
+        color: black;
+        
     }
     img{
         width: 100px;
