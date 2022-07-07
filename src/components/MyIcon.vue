@@ -1,6 +1,7 @@
 <template>
    <section class="container">
        <div class="icon-section flex">
+           
            <!-- prima icona -->
            <div>
                <a class="icon flex" href="#">

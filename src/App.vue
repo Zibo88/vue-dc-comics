@@ -2,6 +2,7 @@
   <div id="app">
     <header>
       <MyHeader/>
+      <MyBanner/>
     </header>
 
     <main>
@@ -22,6 +23,8 @@ import MyHeader from './components/MyHeader.vue'
 import MainCard from './components/MainCard.vue'
 import MyIcon from  './components/MyIcon.vue'
 import TheFooter from  './components/TheFooter.vue'
+import MyBanner from  './components/MyBanner.vue'
+
 
 export default {
   name: 'App',
@@ -29,7 +32,8 @@ export default {
     MyHeader,
     MainCard,
     MyIcon,
-    TheFooter
+    TheFooter,
+    MyBanner
   }
 }
 </script>

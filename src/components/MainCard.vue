@@ -1,7 +1,9 @@
 <template>
     <div class="container">
         <section>
-             --> Cotent goes Here 
+             <div>
+                 card
+             </div>
         </section>
        
     </div>
@@ -9,7 +11,11 @@
 
 <script>
 export default {
-    name:'MainCard'
+    name:'MainCard',
+
+    props:{
+
+    },
 }
 </script>
 

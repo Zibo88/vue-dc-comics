@@ -7,7 +7,7 @@
            <nav>
                <ul class="header-menu"> 
                    <li v-for="link, index in menuLinks" :key="index" :class="{'current' : link.currentElement == true}">
-                       <a :href="link.url" :class="{'current' : link.currentElement == true}">{{link.name}} </a>
+                       <a :href="link.url" :class="{'current' : link.currentElement == true}">{{link.name}}</a>
                    </li>
                </ul>
            </nav>
