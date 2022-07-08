@@ -6,7 +6,7 @@
         <!-- nav -->
            <nav>
                <ul class="header-menu"> 
-                   <li v-for="link, index in menuLinks" :key="index" :class="{'current' : link.currentElement == true}">
+                   <li @click="active(index)" v-for="link, index in menuLinks" :key="index" :class="{'current' : link.currentElement == true}">
                        <a :href="link.url" :class="{'current' : link.currentElement == true}">{{link.name}}</a>
                    </li>
                </ul>
@@ -74,6 +74,11 @@ export default {
            ]
            
 
+        }
+    },
+    methods:{
+        active(index){
+            this.link = index
         }
     }
     
